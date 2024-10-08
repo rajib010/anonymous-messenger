@@ -1,8 +1,5 @@
 import dbConnect from "@/lib/dbConnect";
 import UserModel from "@/model/User";
-import { z } from 'zod';
-import { usernameValidation } from "@/schemas/signUpSchema";
-
 
 export async function POST(request: Request) {
     await dbConnect();
@@ -30,7 +27,7 @@ export async function POST(request: Request) {
                 success: false,
                 message: 'Code has been expired.Sign up again'
             }, { status: 400 })
-        } else {
+        }else{
             return Response.json({
                 success: false,
                 message: 'Incorrect verification code'
