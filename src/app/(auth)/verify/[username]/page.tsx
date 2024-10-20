@@ -1,3 +1,4 @@
+'use client'
 import page from '@/app/page';
 import { useToast } from '@/hooks/use-toast';
 import { verifySchema } from '@/schemas/verifySchema';
@@ -79,4 +80,4 @@ function VerifyAccount() {
     )
 }
 
-export default page
+export default VerifyAccount

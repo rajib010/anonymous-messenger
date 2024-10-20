@@ -157,15 +157,18 @@ export default function SignUpForm() {
                                 </FormItem>
                             )}
                         />
-                        <Button type='submit' disabled={isSubmitting}>
-                            {
-                                isSubmitting ? (
-                                    <>
-                                        <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Signing Up...
-                                    </>
-                                ) : ('SignUp')
-                            }
-                        </Button>
+                        <div className='flex justify-center items-center h-full'>
+                            <Button type='submit' className='flex justify-center items-center' disabled={isSubmitting}>
+                                {
+                                    isSubmitting ? (
+                                        <>
+                                            <Loader2 className='mr-2 h-4 w-4 animate-spin' /> Signing Up...
+                                        </>
+                                    ) : ('SignUp')
+                                }
+                            </Button>
+                        </div>
+
                     </form>
                 </Form>
 
