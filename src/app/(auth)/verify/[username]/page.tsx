@@ -1,5 +1,4 @@
 'use client'
-import page from '@/app/(app)/page';
 import { useToast } from '@/hooks/use-toast';
 import { verifySchema } from '@/schemas/verifySchema';
 import { ApiResponse } from '@/types/ApiResponse';
