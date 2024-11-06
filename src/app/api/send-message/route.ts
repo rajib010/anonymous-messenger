@@ -5,7 +5,7 @@ import { Message } from "@/model/User";
 
 export async function POST(req: Request) {
     await dbConnect();
-
+    
     const { username, content } = await req.json()
     try {
         const user = await UserModel.findOne({ username });
